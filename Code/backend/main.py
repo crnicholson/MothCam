@@ -40,6 +40,8 @@ async def handle_connection(websocket, path):
                                     f.write(message)
                             else:
                                 counter += 1
+            else:
+                print(f"Received message from client: {message}.")
 
         except websockets.exceptions.ConnectionClosed:
             break
