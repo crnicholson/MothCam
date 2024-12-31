@@ -27,7 +27,7 @@ def display_image(path):
 
 
 for entry in os.listdir(f"{cwd}/examples"):
-    if os.path.isfile(os.path.join(f"{cwd}/examples", entry)):
+    if os.path.isfile(f"{cwd}/examples/{entry}"):
         images.append(entry)
         mask = display_image(entry)
 
